@@ -100,7 +100,7 @@ export default {
                             <div class="card-body">
                                 <h5 class="card-title">{{ item.name }} </h5>
                                 <pre class="card-text">{{ item.info }}</pre>
-                                <p class="card-link">Ссылка: {{ item.link }}</p>
+                                <p v-if="item.link" class="card-link">Ссылка: {{ item.link }}</p>
                             </div>
                         </div>
                     </div>

@@ -14,9 +14,8 @@ export default {
   methods: {
     auth() {
       axios.post(`/login`, { email: this.email, password: this.password })
-        .then(({ data }) => {
-          localStorage.user = data
-        })
+        .then(({ data }) => { localStorage.user = JSON.stringify(data) })
+      location.reload()
     }
   }
 }
@@ -55,9 +54,25 @@ export default {
       <button @click="auth" class="btn btn-primary btn-block mb-4">Sign in</button>
     </div>
   </div>
-  <h1 v-else>
-    {{ user?.nam }} ты уже подписался!
-  </h1>
+  <div v-else>
+    <h1>
+      {{ JSON.parse(this.user)?.name }} ты уже подписался!
+    </h1>
+    <ul class="list-group my-3">
+      <li class="list-group-item friend my-2">
+        <div class="username">
+          ссылка на публичный репозиторий с исходниками этого приложения - <a
+            href=" https://github.com/ArsMen1/kids_web_mentor_test"> https://github.com/ArsMen1/kids_web_mentor_test</a>
+        </div>
+      </li>
+      <li class="list-group-item friend my-2">
+        <div class="username">
+          <video width="90%" controls src="src\assets\video\Селекторы CSS.mp4"></video>
+        </div>
+      </li>
+    </ul>
+
+  </div>
 </template>
 
 <style scoped>

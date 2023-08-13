@@ -31,7 +31,7 @@ export default {
         <h3>Мой опыт</h3>
 
         <ul class="list-group my-3">
-            <li v-for="(item, index) in experience" class="list-group-item friend" @click="goItem(item.itemName)">
+            <li v-for="(item, index) in experience" class="list-group-item friend my-2" @click="goItem(item.itemName)">
                 <img :src="'src/assets/img/avatars/' + item.avatar">
                 <div class="username">
                     {{ item.name }}
