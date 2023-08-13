@@ -106,10 +106,10 @@ app.get('/tasks', async function (req, res) {
 });
 
 app.post('/post/create', async function (req, res) {
-    let content = req.body.content;
+    let { content, author } = req.body;
 
     let post = new Post({
-        author: CURRENT_ITEM,
+        author,
         content
     })
     await post.save();

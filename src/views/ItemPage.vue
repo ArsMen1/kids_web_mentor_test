@@ -62,8 +62,8 @@ export default {
 
         async createPost(evt) {
             evt.preventDefault();
-
             this.postContent.trim() && await axios.post('/post/create', {
+                author: this.item._id,
                 content: this.postContent
             });
 
@@ -94,13 +94,13 @@ export default {
                 <div class="card mb-3">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img :src="'/src/assets/avatars/' + item.avatar" class="img-fluid rounded-start">
+                            <img :src="'/src/assets/img/avatars/' + item.avatar" class="img-fluid rounded-start">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h5 class="card-title">{{ item.name }} </h5>
                                 <pre class="card-text">{{ item.info }}</pre>
-                                <p class="card-text">Ссылка: {{ item.link }}</p>
+                                <p class="card-link">Ссылка: {{ item.link }}</p>
                             </div>
                         </div>
                     </div>
@@ -192,5 +192,13 @@ export default {
 .item-post-time {
     font-size: 14px;
     color: #6c757d;
+}
+
+.card-text {
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
 }
 </style>

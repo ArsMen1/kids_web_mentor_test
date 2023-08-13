@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 
 // Компоненты страниц
-import { ItemPage, ExperiencePage, TasksPage, LoginPage } from './views';
+import { ItemPage, ExperiencePage, LinksPage, LoginPage } from './views';
 
 
 export default createRouter({
@@ -28,9 +28,9 @@ export default createRouter({
             component: ItemPage
         },
         {
-            path: '/tasks',
-            name: 'tasks',
-            component: TasksPage
+            path: '/links',
+            name: 'links',
+            component: LinksPage
         },
         {
             path: '/login',

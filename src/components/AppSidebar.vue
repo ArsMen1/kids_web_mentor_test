@@ -1,15 +1,11 @@
 <script>
 export default {
-    mounted() {
-        // console.log(this.$route);
-        // console.log(this.$router);
-    },
     methods: {
         goProfile() {
             this.$router.push({ name: 'profile' });
         },
         goTasks() {
-            this.$router.push({ name: 'tasks' });
+            this.$router.push({ name: 'links' });
         },
         goLogin() {
             this.$router.push({ name: 'login' });
@@ -28,7 +24,7 @@ export default {
         <ul>
             <li>
                 <button class="btn btn-outline-secondary btn-logo" @click="goProfile">
-                    <img src="../assets/logo.png" alt="logo">
+                    <img src="../assets/img/dontdonothing.png" alt="logo">
                 </button>
             </li>
             <li>
@@ -46,17 +42,17 @@ export default {
                 </button>
             </li>
             <li>
-                <button class="btn btn-outline-secondary" @click="goTasks" :class="{
-                    'active': $route.name == 'tasks'
-                }">
-                    Задания
-                </button>
-            </li>
-            <li>
                 <button class="btn btn-outline-secondary" @click="goLogin" :class="{
                     'active': $route.name == 'login'
                 }">
                     Подписка
+                </button>
+            </li>
+            <li>
+                <button class="btn btn-outline-secondary" @click="goTasks" :class="{
+                    'active': $route.name == 'tasks'
+                }">
+                    Связь
                 </button>
             </li>
         </ul>
@@ -82,6 +78,6 @@ export default {
 }
 
 .app-sidebar .btn-logo img {
-    width: 90%;
+    width: 50%;
 }
 </style>

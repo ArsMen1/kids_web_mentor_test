@@ -22,11 +22,11 @@ export default {
 
 		<div class="container py-3">
 			<div class="row">
-				<div class="col-3">
+				<div class="col-2">
 					<!-- Левая колонка -->
 					<app-sidebar></app-sidebar>
 				</div>
-				<div class="col-9">
+				<div class="col-10">
 					<!-- Меняющаяся часть -->
 					<router-view></router-view>
 				</div>
