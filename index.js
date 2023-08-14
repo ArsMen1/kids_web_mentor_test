@@ -71,14 +71,15 @@ let userSchema = new mongoose.Schema({
 let User = mongoose.model('user', userSchema);
 
 
-// Роуты
 // "Главный" пользователь
 let CURRENT_ITEM = '64d37205d0e30c09cd6f7c3d';
+
+
+// Роуты
 app.get('/profile', async function (req, res) {
     let me = await Items.findOne({ _id: CURRENT_ITEM });
     res.redirect(`/item?itemName=${me.itemName}`);
 });
-
 
 app.get('/item', async function (req, res) {
     let itemName = req.query.itemName;
@@ -95,14 +96,6 @@ app.get('/items/posts', async function (req, res) {
 app.get('/items', async function (req, res) {
     let items = await Items.find({ _id: { $ne: CURRENT_ITEM } });
     res.send(items);
-});
-
-app.get('/tasks', async function (req, res) {
-    let posts = await Post.find({ author: { $ne: CURRENT_ITEM } })
-        .sort({ createdAt: -1 })
-        .limit(5)
-        .populate('author')
-    res.send(posts);
 });
 
 app.post('/post/create', async function (req, res) {

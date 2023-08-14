@@ -79,7 +79,7 @@ export default {
     </div>
 </template>
 
-<style>
+<style scoped>
 .links-page .item-avatar {
     width: 50px;
     height: 50px;

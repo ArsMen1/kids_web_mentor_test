@@ -1,6 +1,6 @@
 # 1.kids_web_mentor_test
 
-Тестовое задание для вакансии Я.практикум
+Test assignment for the vacancy Y.practicum
 
 This template should help get you started developing with Vue 3 in Vite.
 

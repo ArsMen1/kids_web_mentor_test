@@ -151,7 +151,7 @@ export default {
 </template>
 
 
-<style>
+<style scoped>
 .item-page img {
     height: 100%;
     width: 100%;
@@ -162,7 +162,6 @@ export default {
 .item-post {
     display: flex;
 }
-
 
 .item-post span {
     display: inline-block;

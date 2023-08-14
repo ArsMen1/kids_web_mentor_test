@@ -42,7 +42,7 @@ export default {
 </template>
 
 
-<style>
+<style scoped>
 .experience-page img {
     width: 80px;
     height: 80px;
