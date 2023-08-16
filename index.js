@@ -13,7 +13,7 @@ app.listen(port, function () {
 
 // Настройка CORS
 let cors = require('cors');
-app.use(cors({ origin: 'https://main--earnest-cocada-1ccbe3.netlify.app:4173' }));
+app.use(cors({}));
 
 
 // Настройка POST-запроса — JSON
