@@ -1,6 +1,6 @@
 // Запросы к серверу
 import axios from "axios";
-axios.defaults.baseURL = 'https://silver-buttercream-055211.netlify.app:3000';
+axios.defaults.baseURL = 'http://localhost:3000';
 
 // Работа с датой
 import dayjs from 'dayjs';
