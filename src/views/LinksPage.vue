@@ -15,7 +15,7 @@ export default {
         send() {
             if (username && password) {
                 errorMessage = ''
-                someHttpClient.sendAndMaybeCipher({ username, password })
+                //здесь проще всего было сделать отправку в тг
             } else {
                 errorMessage = 'Form not filled properly'
             }

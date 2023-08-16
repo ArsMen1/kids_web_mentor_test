@@ -36,7 +36,7 @@ export default {
         <input v-model="password" type="password" id="form2Example2" class="form-control" placeholder="1234" />
         <label class="form-label" for="form2Example2">Пароль</label>
       </div>
-
+      <h2 class="errorMessage" v-if="errorAuth">Неверно введен логин или пароль</h2>
       <div class="row mb-4">
         <div class="col d-flex justify-content-center">
           <div class="form-check">
@@ -82,5 +82,9 @@ export default {
 #subscribe {
   width: 76%;
   margin: 5% auto;
+}
+
+.errorMessage {
+  color: rgb(239, 67, 67);
 }
 </style>

@@ -62,12 +62,12 @@ export default {
 
         async createPost(evt) {
             evt.preventDefault();
-            this.postContent.trim() && await axios.post('/post/create', {
-                author: this.item._id,
-                content: this.postContent
-            });
+            // this.postContent.trim() && await axios.post('/post/create', {
+            //     author: this.item._id,
+            //     content: this.postContent
+            // });
 
-            this.postContent = '';
+            this.postContent = 'БД деплоить нет времени и желания, могу отправить птичку🐦';
             this.loadPosts();
         },
         async deletePost(id) {
