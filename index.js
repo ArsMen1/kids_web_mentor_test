@@ -13,7 +13,7 @@ app.listen(port, function () {
 
 // Настройка CORS
 let cors = require('cors');
-app.use(cors({ origin: 'http://localhost:5173' }));
+app.use(cors({ origin: 'https://silver-buttercream-055211.netlify.app:5173' }));
 
 
 // Настройка POST-запроса — JSON
