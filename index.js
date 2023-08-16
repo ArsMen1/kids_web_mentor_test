@@ -13,7 +13,7 @@ app.listen(port, function () {
 
 // Настройка CORS
 let cors = require('cors');
-app.use(cors({ origin: 'http://localhost:5173' }));
+app.use(cors({ origin: 'http://localhost:4173' }));
 
 
 // Настройка POST-запроса — JSON

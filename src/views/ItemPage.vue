@@ -94,7 +94,7 @@ export default {
                 <div class="card mb-3">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img :src="'/src/assets/img/avatars/' + item.avatar" class="img-fluid rounded-start">
+                            <img :src="'../img/avatars/' + item.avatar" class="img-fluid rounded-start">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
