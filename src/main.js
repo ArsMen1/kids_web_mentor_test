@@ -1,6 +1,6 @@
 // Запросы к серверу
 import axios from "axios";
-axios.defaults.baseURL = 'https://curious-maamoul-f98d93.netlify.app:3000';
+axios.defaults.baseURL = 'https://sunset-petalite-munchkin.glitch.me:3000';
 
 // Работа с датой
 import dayjs from 'dayjs';

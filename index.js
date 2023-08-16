@@ -8,7 +8,7 @@ let app = express();
 let port = 3000;
 
 app.listen(port, function () {
-    console.log(`http://localhost:${port}`);
+    console.log(`https://sunset-petalite-munchkin.glitch.me/${port}`);
 });
 
 // Настройка CORS
