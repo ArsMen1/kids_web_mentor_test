@@ -67,7 +67,10 @@ export default {
       </li>
       <li class="list-group-item friend my-2">
         <div class="username">
-          <video width="90%" controls src="src\assets\video\Селекторы CSS.mp4"></video>
+          <iframe width="100%" height="600px" src="https://www.youtube.com/embed/GtSp-PPdCCc" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
         </div>
       </li>
     </ul>
