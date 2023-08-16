@@ -1,6 +1,6 @@
 // Запросы к серверу
 import axios from "axios";
-axios.defaults.baseURL = 'https://sunset-petalite-munchkin.glitch.me:3000';
+axios.defaults.baseURL = 'https://sunset-petalite-munchkin.glitch.me';
 
 // Работа с датой
 import dayjs from 'dayjs';
